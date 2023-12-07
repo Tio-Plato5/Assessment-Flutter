@@ -28,8 +28,7 @@ class _HomeState extends State<Home> {
   }
 
   void _onPageChanged(int index) {
-    setState(() {
-    });
+    setState(() {});
   }
 
   @override
@@ -39,8 +38,7 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          actions: <Widget>[
-          ],
+          actions: <Widget>[],
         ),
         body: Column(
           children: [
@@ -57,7 +55,7 @@ class _HomeState extends State<Home> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent,
+                    backgroundColor: Colors.transparent,
                     elevation: 0,
                   ),
                   child: MyButton(image: 'images/hotdogs.jpg', label: 'All'),
@@ -71,10 +69,11 @@ class _HomeState extends State<Home> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent,
+                    backgroundColor: Colors.transparent,
                     elevation: 0,
                   ),
-                  child: MyButton(image: 'images/burgers.jpeg', label: 'Makanan'),
+                  child:
+                      MyButton(image: 'images/burgers.jpeg', label: 'Makanan'),
                 ),
                 ElevatedButton(
                   onPressed: () {
